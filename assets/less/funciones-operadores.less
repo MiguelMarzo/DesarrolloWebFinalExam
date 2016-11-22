@@ -1,0 +1,60 @@
+@borde: 0.2em;
+@color: whitesmoke;
+.thumbnail  {
+	background: @color;
+	border: (@borde + 0.1em) solid darken(@color, 20%);
+         .bordes-redondeados(@height: 400px);
+}
+h5 {
+	background: lighten(@color, 30%);
+	border: (@borde - 0.1em) solid @color;
+         .bordes-redondeados();
+}
+
+ 
+
+.logo {
+  max-height: 100px;
+   .bordes-redondeados(@height: 100px);
+}
+
+.bordes-redondeados (@color:whitesmoke;  @height: 150px) {
+    @radio: @height*0.1;
+    height: @height;
+    background: @color;
+    border-radius: @radio;
+    -webkit-border-radius: @radio;
+    -moz-border-radius: @radio;
+}
+
+
+
+/*
+
+.thumbnail {
+  border: 0.3em solid #c2c2c2;
+  height: 400px;
+  background: whitesmoke;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+}
+p {
+  background: #ffffff;
+  border: 0.1em solid whitesmoke;
+  height: 150px;
+  background: whitesmoke;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+}
+.logo {
+  max-height: 100px;
+  height: 100px;
+  background: whitesmoke;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+*/
